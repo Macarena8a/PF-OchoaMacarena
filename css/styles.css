@@ -1,0 +1,72 @@
+*{padding:0;
+    margin: 0; 
+    box-sizing: border-box   
+}
+
+
+
+body{
+    background-color: #f4f3ed;  
+    background-image:url(../img/fondo.PNG);
+    color:#947f7f; 
+    font-family: 'Catamaran', sans-serif;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 20px;
+    padding:15px;
+    line-height: 1.5;
+}
+
+
+.body__descripcion{
+   text-align: center
+}
+.NavBar__BackgroundColor, footer{
+    background-color:#d3caca77;
+}
+
+
+h1, h2, footer, header{text-align: center;
+    color:#947f7f;
+    font-size: 60px;
+    font-family: 'Cormorant Infant', serif;
+    }  
+
+footer{
+        display: flex;    
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        margin-top: auto;
+    }   
+    
+.footer__Contacto--WhatsappIcon{position:fixed;
+        bottom:10px;
+        right:10px;
+        border-radius: 80%;
+        width:80px;
+        opacity: 0.8;
+     } 
+     
+.footer__Contacto--WhatsappIcon:hover{position:fixed;
+        bottom:10px;
+        right:10px;
+        width:100px;
+        opacity: 1.5;
+        transition: 0.5 s all;
+     } 
+.footer__redes{
+        border-radius: 90%;
+        width:80px;
+        padding:15px;
+        opacity: 0.8;
+}
+.footer__redes:hover{
+    width: 90px;
+    background-color: #d8d4d408;
+    opacity: 1;
+}
+
+
+
