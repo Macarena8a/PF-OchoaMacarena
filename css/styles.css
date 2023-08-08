@@ -13,7 +13,7 @@ body{
     display:flex;
     flex-direction: column;
     min-height: 100vh;
-    font-size: 20px;
+    font-size: 30px;
     padding:15px;
     line-height: 1.5;
 }
@@ -68,5 +68,149 @@ footer{
     opacity: 1;
 }
 
+.section__contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
+.section__contenedor .section__fotos{
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: 375px 375px 375px ;
+    grid-template-rows: 375px 375px 375px ;
+    grid-gap: 1rem;
+}
+
+.section__fotos .img-a{
+    grid-column: 1/4;
+}
+
+.section__fotos .img-b{
+    grid-row: 2/4;
+}
+
+.section__fotos .img-c{
+    grid-row: 2/4;
+
+}
+.section__fotos .img-d{
+    grid-row: 2/4;
+    background-image: url(../img/fondo.PNG);
+}
+
+
+.section__contenedor .section__fotos img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #947f7f;
+}
+
+.section__descripcion, .Main__titulo--cards{
+   text-align: center;
+   font-weight: bold;   
+}
+
+.Main__descripcion--cards{
+    font-family: 'Cormorant Infant', serif;
+ }
+
+ .Main__container--cards{
+    background-color: #f0e9e9;
+ }
+
+ .Main__container--cards:hover{
+    background-color: #947f7f;
+    color: #f4f3ed;
+    transition: 0.5s all;
+ 
+ }
+
+ .flex-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;  
+    justify-content: center;  
+    background-color:#b9b3b3;
+    margin:50px 30px;
+    color:antiquewhite
+
+ }
+
+ .form{
+    min-width:50px;
+    flex:1;
+    text-align: center;
+    padding:30px;
+
+ }
+
+ .form__input{
+    min-width: 80%;
+    padding:7px;
+    margin: 6px 0;
+    border: none;
+    border-top: 3px solid #756262;
+    background: linear-gradient(to bottom,transparent,#8f8b8b )
+ }
+
+ .form__input:hover{
+   background:#a79f9f;
+   outline: none;
+ }
+
+ .form textarea{
+    min-height: 200px;
+
+ }
+
+ .form-img{
+    flex:1;
+    padding:10px;
+    display:flex;
+    min-width: 300px;
+    max-width: 500px;
+ }
+ .form-img img{
+    width: 30%;
+    margin:50px;
+    border-radius: 60%;
+    background-color: white;
+    padding:20px
+ }
+
+
+ .main__contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    border: 1px solid  #756262;
+    border-radius: 10px;
+}
+
+.main__descripcion--foto{
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+    grid-gap: 1px;
+}
+
+.main__descripcion--foto img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px dashed #756262;
+    margin:10px;
+}
+
+
+ a{text-decoration: none;
+    color: #756262;
+ }
 
