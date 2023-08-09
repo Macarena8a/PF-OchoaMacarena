@@ -172,6 +172,7 @@ h1, h2, footer, header{text-align: center;
     color: #756262;
  }
 
+
  @media screen and (max-width:480px){  /*a partir d los 480 cambia a los colores q estoy definiendo*/
     .main__contenedor{
         display: inline-block;
@@ -215,10 +216,7 @@ h1, h2, footer, header{text-align: center;
         color:antiquewhite
     
      }
-
-     .tamañomaca{
-        margin-top: 10px;
-        height: 65vh;
-    
-     }
+    .img-fluid{ max-width: 100%; height: auto;}
+    } 
 }
+
