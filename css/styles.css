@@ -233,5 +233,12 @@ h1, h2, footer, header{text-align: center;
     .form__input{
         background: #e9e8e2;
         color:#756262
-       } 
+       }
+
+   .carousel-item img{
+      margin-top: 10px;
+      height: 340px;
+      width: 500px;
+      border: 1px solid #756262
     }
+   }
