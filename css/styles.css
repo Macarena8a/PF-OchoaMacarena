@@ -1,159 +1,152 @@
-*{
-    padding:0;
-    margin: 0; 
-    box-sizing: border-box   
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-
-
-body{
-    background-color: #f4f3ed;  
-    background-image:url(../img/fondo.PNG);
-    color:#947f7f; 
-    font-family: 'Catamaran', sans-serif;
+body {
+    background-color: #f4f3ed;
+    background-image: url(../img/fondo.PNG);
+    color: #947f7f;
+    font-family: "Catamaran", sans-serif;
     font-size: 20px;
-    padding:5px;
+    padding: 5px;
     line-height: 1.5;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    min-height: 100vh;    
+    min-height: 100vh;
 }
 
-footer{
-   margin-top: auto;
- }
-
-
-.body__descripcion{
-   text-align: center
-}
-.NavBar__BackgroundColor, footer{
-    background-color:#d3caca77;
+footer {
+    margin-top: auto;
 }
 
+.body__descripcion {
+    text-align: center;
+}
+.NavBar__BackgroundColor,
+footer {
+    background-color: #d3caca77;
+}
 
-h1, h2, footer, header{text-align: center;
-    color:#947f7f;
+h1,
+h2,
+footer,
+header {
+    text-align: center;
+    color: #947f7f;
     font-size: 40px;
-    font-family: 'Cormorant Infant', serif;
-}  
-
-
-    
-.footer__Contacto--WhatsappIcon{
-        position:fixed;
-        bottom:10px;
-        right:10px;
-        border-radius: 80%;
-        width:80px;
-        opacity: 0.8;
-} 
-     
-.footer__Contacto--WhatsappIcon:hover{
-        position:fixed;
-        bottom:10px;
-        right:10px;
-        width:100px;
-        opacity: 1.5;
-        transition: 0.5 s all;
-} 
-.footer__redes{
-        border-radius: 90%;
-        width:80px;
-        padding:15px;
-        opacity: 0.8;
+    font-family: "Cormorant Infant", serif;
 }
-.footer__redes:hover{
+
+.footer__Contacto--WhatsappIcon {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 80%;
+    width: 80px;
+    opacity: 0.8;
+}
+
+.footer__Contacto--WhatsappIcon:hover {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    opacity: 1.5;
+    transition: 0.5 s all;
+}
+.footer__redes {
+    width: 80px;
+    padding: 15px;
+    opacity: 0.8;
+}
+.footer__redes:hover {
     width: 90px;
     background-color: #d8d4d408;
     opacity: 1;
 }
 
-.section__descripcion, .Main__titulo--cards{
-   text-align: center;
-   font-weight: bold;   
+.section__descripcion,
+.Main__titulo--cards {
+    text-align: center;
+    font-weight: bold;
 }
 
-.Main__descripcion--cards{
-    font-family: 'Cormorant Infant', serif;
- }
+.Main__descripcion--cards {
+    font-family: "Cormorant Infant", serif;
+}
 
- .Main__container--cards{
+.Main__container--cards {
     background-color: #f0e9e9;
- }
+}
 
- .Main__container--cards:hover{
+.Main__container--cards:hover {
     background-color: #947f7f;
     color: #f4f3ed;
     transition: 0.5s all;
- 
- }
+}
 
- .flex-container{
+.flex-container {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;  
-    justify-content: center;  
-    background-color:#b9b3b3;
-    margin:20px 30px;
-    color:antiquewhite
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #b9b3b3;
+    margin: 20px 30px;
+    color: antiquewhite;
+}
 
- }
-
- .form{
-    min-width:50px;
-    flex:1;
+.form {
+    min-width: 50px;
+    flex: 1;
     text-align: center;
-    padding:10px;
-    order: 5
- }
+    padding: 10px;
+    order: 5;
+}
 
- .form__input{
+.form__input {
     min-width: 90%;
-    padding:7px;
+    padding: 7px;
     margin: 6px 0;
     border: none;
     border-top: 3px solid #756262;
-    background: linear-gradient(to bottom,transparent,#8f8b8b)
- }
+    background: linear-gradient(to bottom, transparent, #8f8b8b);
+}
 
- .form__input:hover{
-   background:#a79f9f;
-   outline: none;
- }
+.form__input:hover {
+    background: #a79f9f;
+    outline: none;
+}
 
- .form textarea{
+.form textarea {
     min-height: 300px;
+}
 
- }
-
- .form-img{
-    flex:1;
-    padding:10px;
-    display:flex;   
-    order:2
- }
- .form-img img{
+.form-img {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    order: 2;
+}
+.form-img img {
     width: 50%;
-    margin:auto;
+    margin: auto;
     border-radius: 60%;
     background-color: white;
-    padding:20px
- }
+    padding: 20px;
+}
 
-
-
-
- .main__contenedor{
+.main__contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 50vh;
-    border: 1px solid  #756262;
+    border: 1px solid #756262;
     border-radius: 10px;
 }
 
-.main__descripcion--foto{
+.main__descripcion--foto {
     max-width: 470px;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -161,84 +154,75 @@ h1, h2, footer, header{text-align: center;
     grid-gap: 1px;
 }
 
-.main__descripcion--foto img{
+.main__descripcion--foto img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 10px;
     border: 1px dashed #756262;
-    margin:10px;
+    margin: 10px;
 }
 
-
- a{text-decoration: none;
+a {
+    text-decoration: none;
     color: #756262;
- }
+}
 
-
- @media screen and (max-width:480px){  /*a partir d los 480 cambia a los colores q estoy definiendo*/
-    .main__contenedor{
+@media screen and (max-width: 480px) {
+    /*a partir d los 480 cambia a los colores q estoy definiendo*/
+    .main__contenedor {
         display: inline-block;
-        justify-content: center;
-        align-items: center;
-        min-height: 50vh;
-        border: 1px solid  wheat;
+        border: 1px solid wheat;
         background-color: #afa6a6;
         color: #f0e9e9;
         font-size: 22px;
     }
-    .main__contenedor a{
+
+    .main__contenedor a {
         color: #f0e9e9;
     }
 
-    .logo__mediaquery{
-        width: 100px
+    .logo__mediaquery {
+        width: 100px;
     }
 
-    .main__descripcion--foto img{
+    .main__descripcion--foto img {
         width: 30%;
         border-radius: 10px;
         border: none;
-        margin:10px;
+        margin: 10px;
         padding-bottom: 15px;
         align-items: center;
     }
-    
-    .footer__redes{
-        width:60px;
+
+    .footer__redes {
+        width: 60px;
     }
 
-    .flex-container{
+    .flex-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;  
-        justify-content: center;  
-        background-color:#b9b3b3;
-        margin:20px 10px;
-        color:antiquewhite
-    
-     }
-
-     .footer__Contacto--WhatsappIcon{position:fixed;
-        bottom:10px;
-        right:10px;
-        border-radius: 80%;
-        width:60px;
-        opacity: 1;
-     } 
-     
-   
-
-    .form__input{
-        background: #e9e8e2;
-        color:#756262
-       }
-
-   .carousel-item img{
-      margin-top: 10px;
-      height: 340px;
-      width: 500px;
-      border: 1px solid #756262
+        margin: 20px 10px;
     }
-   }
+
+    .footer__Contacto--WhatsappIcon {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        border-radius: 80%;
+        width: 60px;
+        opacity: 1;
+    }
+
+    .form__input {
+        background: #e9e8e2;
+        color: #756262;
+    }
+
+    .carousel-item img {
+        margin-top: 10px;
+        height: 340px;
+        width: 500px;
+        border: 1px solid #756262;
+    }
+}
