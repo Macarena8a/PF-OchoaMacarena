@@ -17,6 +17,37 @@ body {
     min-height: 100vh;
 }
 
+.main__contenedorIndex{
+    display: flex;
+    padding:10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+   
+        
+}
+
+.main__contenedorIndex img{
+   border-radius: 10%;
+   padding:10px;    
+}
+
+.main__contenedorIndex p{
+    font-size: 30px;   
+ }
+
+ 
+
+.main__contenedor--fotos{
+    display: flex;
+    padding:10px;
+    justify-content: center;
+    align-content: center;
+    
+    
+    
+}
+
 footer {
     margin-top: auto;
 }
@@ -130,7 +161,7 @@ header {
     order: 2;
 }
 .form-img img {
-    width: 50%;
+    width: 35%;
     margin: auto;
     border-radius: 60%;
     background-color: white;
@@ -145,23 +176,24 @@ header {
     border: 1px solid #756262;
     border-radius: 10px;
     padding: 1rem;
+    width: 1700px;
+    margin:auto
 }
 
 .main__descripcion--foto {
     max-width: 470px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr;
-    grid-gap: 1px;
-}
+    padding:20px;
 
-.main__descripcion--foto img {
+  }
+
+.main__contenedor img {
     object-fit: cover;
-    width: 100%;
+    width: 20%;
     height: 100%;
     border-radius: 10px;
     border: 1px dashed #756262;
     margin: 10px;
+    padding:5px
 }
 
 a {
@@ -172,13 +204,23 @@ a {
 @media screen and (max-width: 480px) {
     /*a partir d los 480 cambia a los colores q estoy definiendo*/
     .main__contenedor {
-        display: inline-block;
+        flex-direction: column;
         border: 1px solid wheat;
         background-color: #afa6a6;
         color: #f0e9e9;
         font-size: 22px;
+        align-items: center;
+        max-width: 350px;
+    }
+    .main__contenedorIndex {
+        flex-direction: column;
+        width: 350px ;
     }
 
+    .main__contenedorIndex img{
+        width: 300px ;
+        justify-content: center;
+    }
     .main__contenedor a {
         color: #f0e9e9;
     }
@@ -194,6 +236,7 @@ a {
         margin: 10px;
         padding-bottom: 15px;
         align-items: center;
+        align-self: center;
     }
 
     .footer__redes {
