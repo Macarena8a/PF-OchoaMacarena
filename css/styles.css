@@ -144,6 +144,7 @@ header {
     min-height: 50vh;
     border: 1px solid #756262;
     border-radius: 10px;
+    padding: 1rem;
 }
 
 .main__descripcion--foto {
