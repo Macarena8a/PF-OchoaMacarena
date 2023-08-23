@@ -1,0 +1,140 @@
+/*index*/
+main{
+    .main__contenedorIndex{
+        display: flex;
+        padding:10px;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 30px;
+        @include mobile{
+            flex-direction: column;
+            width: 350px ;
+        }
+        img {
+            border-radius: 10%;
+            padding:10px;
+            @include mobile{
+                width: 300px ;
+                justify-content: center;
+            }    
+        }
+        p {
+            font-size: 30px;    
+        }
+            
+        
+    }
+}
+/*fin index*/
+
+/*inicio Servicios*/
+.card{        
+    .Main__container--cards{         
+        background-color: #f0e9e9;                       
+        &:hover{
+            background-color: #947f7f;
+            color: #f4f3ed;
+            transition: 0.5s all;
+        }
+    }
+    .Main__titulo--cards {
+        text-align: center;
+        font-weight: bold;
+    }
+    .Main__descripcion--cards {
+        font-family: "Cormorant Infant", serif;
+    }
+}
+/*Fin Servicios*/
+
+/*inicio Acercademi*/
+main{
+   .main__contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+        border: 1px solid #756262;
+        border-radius: 10px;
+        padding: 10px;
+        width: 1700px;
+        margin:auto;
+        @include mobile {
+            flex-direction: column;
+            border: 1px solid wheat;
+            background-color: #afa6a6;
+            color: #f0e9e9;
+            font-size: 22px;
+            align-items: center;
+            max-width: 350px;    
+        }    
+        img {
+            object-fit: cover;    
+            width: 20%;
+            height: 100%;
+            border-radius: 10px;
+            border: 1px dashed #756262;
+            margin: 10px;
+            padding:5px
+        }        
+    }
+}
+ 
+/*inicio contacto*/
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #b9b3b3;
+    margin: auto;
+    color: antiquewhite;
+    width: 70%;
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 10px;
+        min-width: 350px
+    }
+    img{
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        order: 2;
+        max-width: 10%;
+        width: 10%;
+        margin: auto;
+        border-radius: 70%;        
+        padding: 20px;
+        @include mobile{
+            min-width: 30%;
+        }        
+    }      
+    .form{
+        min-width: 50px;
+        flex: 1;
+        text-align: center;
+        padding: 5px;
+        order: 5;
+        .form__section{
+            .form__input{
+                min-width: 90%;
+                padding: 7px;
+                margin: 6px 0;
+                border: none;
+                border-top: 3px solid #756262;
+                background: linear-gradient(to bottom, transparent, #8f8b8b);
+                &:hover{
+                    background: #a79f9f;
+                    outline: none;
+                }
+                .form textarea {
+                    min-height: 300px;
+                    @include mobile{
+                        min-height: 300px;
+                    } 
+                }              
+            }   
+        }
+    }      
+} 

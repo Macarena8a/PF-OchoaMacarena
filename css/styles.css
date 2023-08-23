@@ -15,6 +15,145 @@ body {
   flex-direction: column;
   min-height: 100vh; }
 
+h1, h2 {
+  text-align: center;
+  color: #947f7f;
+  font-size: 40px;
+  font-family: "Cormorant Infant", serif; }
+
+a {
+  text-decoration: none;
+  color: #756262; }
+
+header {
+  text-align: center;
+  color: #947f7f;
+  font-size: 40px;
+  font-family: "Cormorant Infant", serif; }
+  header .NavBar__BackgroundColor {
+    background-color: #d3caca77; }
+    @media screen and (max-width: 480px) {
+      header .NavBar__BackgroundColor container-fluid a .logo__mediaquery {
+        width: 100px; } }
+
+/*index*/
+main .main__contenedorIndex {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px; }
+  @media screen and (max-width: 480px) {
+    main .main__contenedorIndex {
+      flex-direction: column;
+      width: 350px; } }
+  main .main__contenedorIndex img {
+    border-radius: 10%;
+    padding: 10px; }
+    @media screen and (max-width: 480px) {
+      main .main__contenedorIndex img {
+        width: 300px;
+        justify-content: center; } }
+  main .main__contenedorIndex p {
+    font-size: 30px; }
+
+/*fin index*/
+/*inicio Servicios*/
+.card .Main__container--cards {
+  background-color: #f0e9e9; }
+  .card .Main__container--cards:hover {
+    background-color: #947f7f;
+    color: #f4f3ed;
+    transition: 0.5s all; }
+
+.card .Main__titulo--cards {
+  text-align: center;
+  font-weight: bold; }
+
+.card .Main__descripcion--cards {
+  font-family: "Cormorant Infant", serif; }
+
+/*Fin Servicios*/
+/*inicio Acercademi*/
+main .main__contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  border: 1px solid #756262;
+  border-radius: 10px;
+  padding: 10px;
+  width: 1700px;
+  margin: auto; }
+  @media screen and (max-width: 480px) {
+    main .main__contenedor {
+      flex-direction: column;
+      border: 1px solid wheat;
+      background-color: #afa6a6;
+      color: #f0e9e9;
+      font-size: 22px;
+      align-items: center;
+      max-width: 350px; } }
+  main .main__contenedor img {
+    object-fit: cover;
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px dashed #756262;
+    margin: 10px;
+    padding: 5px; }
+
+/*inicio contacto*/
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #b9b3b3;
+  margin: auto;
+  color: antiquewhite;
+  width: 70%; }
+  @media screen and (max-width: 480px) {
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 10px;
+      min-width: 350px; } }
+  .flex-container img {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    order: 2;
+    max-width: 10%;
+    width: 10%;
+    margin: auto;
+    border-radius: 70%;
+    padding: 20px; }
+    @media screen and (max-width: 480px) {
+      .flex-container img {
+        min-width: 30%; } }
+  .flex-container .form {
+    min-width: 50px;
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+    order: 5; }
+    .flex-container .form .form__section .form__input {
+      min-width: 90%;
+      padding: 7px;
+      margin: 6px 0;
+      border: none;
+      border-top: 3px solid #756262;
+      background: linear-gradient(to bottom, transparent, #8f8b8b); }
+      .flex-container .form .form__section .form__input:hover {
+        background: #a79f9f;
+        outline: none; }
+      .flex-container .form .form__section .form__input .form textarea {
+        min-height: 300px; }
+        @media screen and (max-width: 480px) {
+          .flex-container .form .form__section .form__input .form textarea {
+            min-height: 300px; } }
+
 footer {
   margin-top: auto;
   background-color: #d3caca77;
@@ -29,6 +168,10 @@ footer {
     border-radius: 80%;
     width: 80px;
     opacity: 0.8; }
+    @media screen and (max-width: 480px) {
+      footer .footer_contacto a .footer__Contacto--WhatsappIcon {
+        width: 60px;
+        opacity: 1; } }
     footer .footer_contacto a .footer__Contacto--WhatsappIcon:hover {
       position: fixed;
       bottom: 10px;
@@ -40,6 +183,9 @@ footer {
     width: 80px;
     padding: 15px;
     opacity: 0.8; }
+    @media screen and (max-width: 480px) {
+      footer .footer_contacto a .footer__redes {
+        width: 60px; } }
     footer .footer_contacto a .footer__redes:hover {
       width: 90px;
       background-color: #d8d4d408;

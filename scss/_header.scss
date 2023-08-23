@@ -1,0 +1,20 @@
+header{
+    text-align: center;
+    color: #947f7f;
+    font-size: 40px;
+    font-family: "Cormorant Infant", serif;
+    .NavBar__BackgroundColor {
+    background-color: #d3caca77;
+        container-fluid{
+            a{                
+            .logo__mediaquery {
+            @include mobile{
+                width: 100px;
+                }
+            }
+            }
+        }
+    }
+} 
+
+
