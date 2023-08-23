@@ -8,8 +8,8 @@ header{
         container-fluid{
             a{                
             .logo__mediaquery {
-            @include mobile{
-                width: 100px;
+                @include mobile{
+                    width: 100px;
                 }
             }
             }
