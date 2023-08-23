@@ -1,0 +1,39 @@
+footer {
+    margin-top: auto;
+    background-color: #d3caca77;
+    text-align: center;
+    color: #947f7f;
+    font-size: 40px;
+    font-family: "Cormorant Infant", serif;
+    .footer_contacto{
+        a{
+        .footer__Contacto--WhatsappIcon {
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+                border-radius: 80%;
+                width: 80px;
+                opacity: 0.8;
+                &:hover {
+                    position: fixed;
+                    bottom: 10px;
+                    right: 10px;
+                    width: 100px;
+                    opacity: 1.5;
+                    transition: 0.5 s all;
+                }
+        }
+        .footer__redes  {
+                    width: 80px;
+                    padding: 15px;
+                    opacity: 0.8;
+                    &:hover {
+                        width: 90px;
+                        background-color: #d8d4d408;
+                        opacity: 1;
+                    }
+        }
+        
+        }   
+    }
+}
