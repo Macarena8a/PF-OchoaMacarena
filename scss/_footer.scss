@@ -1,10 +1,10 @@
 footer {
     margin-top: auto;
-    background-color: #d3caca77;
+    background-color: $color2;
     text-align: center;
-    color: #947f7f;
+    color: $color2;
     font-size: 40px;
-    font-family: "Cormorant Infant", serif;
+    font-family: $fuente;
     .footer_contacto {
         a {
             .footer__Contacto--WhatsappIcon {
@@ -36,7 +36,7 @@ footer {
                 }
                 &:hover {
                     width: 90px;
-                    background-color: #d8d4d408;
+                    background-color: $color4;
                     opacity: 1;
                 }
             }

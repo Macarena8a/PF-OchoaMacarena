@@ -5,10 +5,9 @@
 }
 
 body {
-    background-color: #f4f3ed;
-    background-image: url(../img/fondo.PNG);
-    color: #947f7f;
-    font-family: "Catamaran", sans-serif;
+    background-color:$color1;
+    color: $color3;
+    font-family: $fuente;
     font-size: 20px;
     padding: 5px;
     line-height: 1.5;
@@ -19,12 +18,13 @@ body {
 
 h1,h2{ 
     text-align: center;
-    color: #947f7f;
+    color: $color3;
     font-size: 40px;
-    font-family: "Cormorant Infant", serif;
+    font-family: $fuente;
+    padding:20px;
 }
 a {
     text-decoration: none;
-    color: #756262;
+    color: $color3;
 }
 

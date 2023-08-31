@@ -4,10 +4,9 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #f4f3ed;
-  background-image: url(../img/fondo.PNG);
-  color: #947f7f;
-  font-family: "Catamaran", sans-serif;
+  background-color: #eff0f6;
+  color: #383636d6;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   padding: 5px;
   line-height: 1.5;
@@ -17,62 +16,157 @@ body {
 
 h1, h2 {
   text-align: center;
-  color: #947f7f;
+  color: #383636d6;
   font-size: 40px;
-  font-family: "Cormorant Infant", serif; }
+  font-family: "Lato", sans-serif;
+  padding: 20px; }
 
 a {
   text-decoration: none;
-  color: #756262; }
+  color: #383636d6; }
 
 header {
   text-align: center;
-  color: #947f7f;
+  color: #383636d6;
   font-size: 40px;
-  font-family: "Cormorant Infant", serif; }
+  font-family: "Lato", sans-serif; }
   header .NavBar__BackgroundColor {
-    background-color: #d3caca77; }
+    background-color: #bdbfd4; }
     @media screen and (max-width: 480px) {
-      header .NavBar__BackgroundColor container-fluid a .logo__mediaquery {
+      header .NavBar__BackgroundColor .container-fluid a .logo__mediaquery {
         width: 100px; } }
 
 /*index*/
-main .main__contenedorIndex {
+main .section1 {
   display: flex;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 30px; }
-  @media screen and (max-width: 480px) {
-    main .main__contenedorIndex {
-      flex-direction: column;
-      width: 350px; } }
-  main .main__contenedorIndex img {
-    border-radius: 10%;
-    padding: 10px;
-    width: 400px; }
-    @media screen and (max-width: 480px) {
-      main .main__contenedorIndex img {
-        width: 300px;
-        justify-content: center; } }
-  main .main__contenedorIndex p {
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 5px auto;
+  background-color: #bdbfd4;
+  border-radius: 10px; }
+  main .section1 p {
+    text-align: center;
     font-size: 30px; }
+
+main .section2 {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 5px; }
+  main .section2 .section2__acercademi {
+    max-width: 900px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 5px auto; }
+    main .section2 .section2__acercademi p {
+      font-size: 2rem;
+      padding: 5px;
+      line-height: 1.5;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center; }
+    main .section2 .section2__acercademi a {
+      background-color: #8588a8;
+      color: #eff0f6;
+      font-weight: bold;
+      font-size: 2rem;
+      max-width: 600px;
+      height: 50px;
+      border-radius: 10px;
+      padding: 5px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      margin: 5px auto; }
+      main .section2 .section2__acercademi a:hover {
+        background-color: #eff0f6;
+        color: #8588a8;
+        border: 1px solid #8588a8; }
+  main .section2 .section2__foto {
+    max-width: 800px;
+    display: flex; }
+    main .section2 .section2__foto img {
+      width: 500px;
+      border-radius: 10px; }
+
+main .section3 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  max-width: 1000px; }
+  main .section3 p {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #bdbfd4;
+    border: 1px dashed #eff0f6; }
+  main .section3 .mapa {
+    display: flex;
+    justify-content: center;
+    margin: 5px auto; }
 
 /*fin index*/
 /*inicio Servicios*/
-.card .Main__container--cards {
-  background-color: #f0e9e9; }
-  .card .Main__container--cards:hover {
-    background-color: #947f7f;
-    color: #f4f3ed;
-    transition: 0.5s all; }
-
-.card .Main__titulo--cards {
-  text-align: center;
-  font-weight: bold; }
-
-.card .Main__descripcion--cards {
-  font-family: "Cormorant Infant", serif; }
+.contenedor {
+  width: 100%;
+  max-width: 1600px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; }
+  .contenedor .card__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin: 3px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 400ms ease; }
+    .contenedor .card__container:hover {
+      transform: translateY(-1%); }
+    .contenedor .card__container .card-header {
+      height: 200px;
+      width: 100%;
+      object-position: 50% 50%;
+      object-fit: cover; }
+      .contenedor .card__container .card-header img {
+        width: 100%;
+        display: block;
+        border-radius: 5px; }
+    .contenedor .card__container .card-body {
+      background-color: #eff0f6;
+      padding: 20px 15px;
+      text-align: justify;
+      border: 1px solid #bdbfd4;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column; }
+      .contenedor .card__container .card-body .card-title {
+        text-align: center;
+        margin: 0;
+        font-weight: bold;
+        text-decoration: underline; }
+      .contenedor .card__container .card-body .card-description {
+        flex-grow: 1;
+        font-weight: bold; }
+      .contenedor .card__container .card-body .btn {
+        display: block;
+        background-color: #8588a8;
+        padding: 5px;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        opacity: 1.5; }
+        .contenedor .card__container .card-body .btn:hover {
+          background-color: #3f404e;
+          opacity: 0.8; }
 
 /*Fin Servicios*/
 /*inicio Acercademi*/
@@ -81,7 +175,8 @@ main .main__contenedor {
   justify-content: center;
   align-items: center;
   min-height: 50vh;
-  border: 1px solid #756262;
+  border: 1px solid #383636d6;
+  font-family: "Lato", sans-serif;
   border-radius: 10px;
   padding: 10px;
   width: 1700px;
@@ -89,9 +184,9 @@ main .main__contenedor {
   @media screen and (max-width: 480px) {
     main .main__contenedor {
       flex-direction: column;
-      border: 1px solid wheat;
-      background-color: #afa6a6;
-      color: #f0e9e9;
+      border: 1px solid #bdbfd4;
+      background-color: #eff0f6;
+      color: #383636d6;
       font-size: 22px;
       align-items: center;
       max-width: 350px; } }
@@ -100,69 +195,94 @@ main .main__contenedor {
     width: 20%;
     height: 100%;
     border-radius: 10px;
-    border: 1px dashed #756262;
+    border: 1px dashed #383636d7;
     margin: 10px;
     padding: 5px; }
 
 /*inicio contacto*/
-.flex-container {
+.maincontacto {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #b9b3b3;
-  margin: auto;
-  color: antiquewhite;
-  width: 70%; }
-  @media screen and (max-width: 480px) {
-    .flex-container {
-      display: flex;
-      flex-direction: column;
-      margin: 20px 10px;
-      min-width: 350px; } }
-  .flex-container img {
-    flex: 1;
-    padding: 20px;
+  flex-direction: column; }
+  .maincontacto .section1 {
     display: flex;
-    order: 2;
-    max-width: 10%;
-    width: 10%;
-    margin: auto;
-    border-radius: 70%;
-    padding: 20px; }
-    @media screen and (max-width: 480px) {
-      .flex-container img {
-        min-width: 30%; } }
-  .flex-container .form {
-    min-width: 50px;
-    flex: 1;
-    text-align: center;
+    max-width: 1400px;
+    margin: 5px auto; }
+    .maincontacto .section1 .section1__form {
+      display: flex;
+      max-width: 1000px; }
+      .maincontacto .section1 .section1__form .form {
+        width: 900px;
+        padding: 10px;
+        margin: 0 auto;
+        background-color: #bdbfd4; }
+        .maincontacto .section1 .section1__form .form .input, .maincontacto .section1 .section1__form .form .textarea, .maincontacto .section1 .section1__form .form .button {
+          width: 100%;
+          padding: 20px;
+          margin: 5px auto;
+          font-size: 2rem; }
+          .maincontacto .section1 .section1__form .form .input .textarea, .maincontacto .section1 .section1__form .form .textarea .textarea, .maincontacto .section1 .section1__form .form .button .textarea {
+            max-width: 100%;
+            min-height: 100px;
+            max-height: 100px; }
+  .maincontacto .section2 .flex-containerContacto {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin: 10px 0 10px 0; }
+    .maincontacto .section2 .flex-containerContacto h2 {
+      text-align: left;
+      text-decoration: underline; }
+    .maincontacto .section2 .flex-containerContacto .flex-div--contacto {
+      display: flex;
+      max-width: 600px;
+      gap: 5px;
+      padding: 5px; }
+      .maincontacto .section2 .flex-containerContacto .flex-div--contacto img {
+        width: 50px;
+        gap: 5px; }
+  .maincontacto .section2 .flex-containerMapa {
+    display: flex;
+    max-width: 900px;
+    margin: 5px auto;
     padding: 5px;
-    order: 5; }
-    .flex-container .form .form__section .form__input {
-      min-width: 90%;
-      padding: 7px;
-      margin: 6px 0;
-      border: none;
-      border-top: 3px solid #756262;
-      background: linear-gradient(to bottom, transparent, #8f8b8b); }
-      .flex-container .form .form__section .form__input:hover {
-        background: #a79f9f;
-        outline: none; }
-      .flex-container .form .form__section .form__input .form textarea {
-        min-height: 300px; }
-        @media screen and (max-width: 480px) {
-          .flex-container .form .form__section .form__input .form textarea {
-            min-height: 300px; } }
+    flex-direction: column; }
+    .maincontacto .section2 .flex-containerMapa .flex-div--mapa {
+      display: flex;
+      max-width: 600px;
+      gap: 5px;
+      padding: 5px; }
+      .maincontacto .section2 .flex-containerMapa .flex-div--mapa .mapa {
+        text-align: center;
+        margin: 5px auto; }
 
 /*fin contacto*/
+/*Inicio faqs*/
+.contenedor__faq {
+  display: flex;
+  max-width: 1300px;
+  margin: 2rem auto;
+  gap: 2rem; }
+  .contenedor__faq img {
+    width: 500px;
+    border-radius: 10px; }
+
+.contenedor__faqRowReverse {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 1300px;
+  margin: 2rem auto;
+  gap: 2rem; }
+  .contenedor__faqRowReverse img {
+    width: 500px;
+    border-radius: 10px; }
+
 footer {
   margin-top: auto;
-  background-color: #d3caca77;
+  background-color: #bdbfd4;
   text-align: center;
-  color: #947f7f;
+  color: #bdbfd4;
   font-size: 40px;
-  font-family: "Cormorant Infant", serif; }
+  font-family: "Lato", sans-serif; }
   footer .footer_contacto a .footer__Contacto--WhatsappIcon {
     position: fixed;
     bottom: 10px;
@@ -190,5 +310,5 @@ footer {
         width: 60px; } }
     footer .footer_contacto a .footer__redes:hover {
       width: 90px;
-      background-color: #d8d4d408;
+      background-color: #383636d7;
       opacity: 1; }

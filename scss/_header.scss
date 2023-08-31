@@ -1,11 +1,11 @@
 header{
     text-align: center;
-    color: #947f7f;
+    color: $color3;
     font-size: 40px;
-    font-family: "Cormorant Infant", serif;
+    font-family: $fuente;
     .NavBar__BackgroundColor {
-    background-color: #d3caca77;
-        container-fluid{
+    background-color: $color2;
+        .container-fluid{
             a{                
             .logo__mediaquery {
                 @include mobile{
