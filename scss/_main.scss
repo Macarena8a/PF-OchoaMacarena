@@ -9,7 +9,14 @@ main{
         border-radius: 10px;
         p{
             text-align: center;
-            font-size: 30px;        
+            font-size: 30px;
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+                font-size: 22px;
+                max-width: 350;
+                margin: 0 auto;   
+            }         
         }
     }
     .section2{
@@ -17,7 +24,17 @@ main{
         align-items:center;        
         max-width: 1200px; 
         margin: 10px auto;
-        padding:5px;       
+        padding:5px;
+        @include mobile {
+            max-width: 400px;
+            flex-direction: column;
+        }  
+        @include mobile {
+            flex-direction: column;
+            font-size: 22px;
+            max-width: 350px; 
+            margin: 0 auto;   
+        }       
         .section2__acercademi{
             max-width: 900px; 
             display: flex;
@@ -31,7 +48,12 @@ main{
                 display: flex;
                 flex-direction: column;
                 text-align: center;
-                align-items: center;             
+                align-items: center;
+                @include mobile {
+                    font-size: 22px;
+                    max-width: 350;
+                    margin: 0 auto;   
+                }               
             }
             a{
                 background-color: $color6;
@@ -46,6 +68,10 @@ main{
                 text-align: center;
                 align-items: center;
                 margin:5px auto;
+                @include mobile {
+                    font-size: 22px;
+                    margin: 0 auto;   
+                } 
                 &:hover{
                     background-color: $color1;
                     color: $color6;
@@ -59,6 +85,12 @@ main{
             img{
                 width: 500px;
                 border-radius: 10px;
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 350px; 
+                    margin: 0 auto;   
+                } 
             }           
         }        
     }
@@ -73,12 +105,22 @@ main{
             font-size: 2rem; 
             text-align: center;
             background-color: $color2;
-            border: 1px dashed $color1;             
+            border: 1px dashed $color1;
+            @include mobile {
+                font-size: 22px;
+                max-width: 350px; 
+                margin: 0 auto;   
+            }              
         }    
         .mapa{
             display: flex;
             justify-content: center;            
             margin: 5px auto;
+            @include mobile {
+                flex-direction: column;
+                max-width: 350px; 
+                margin: 0 auto;   
+            } 
 
         }
     }
@@ -93,6 +135,13 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:  10px;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+        max-width: 400px; 
+        margin: 0 auto;   
+    } 
     .card__container{
         display: flex;
         flex-direction: column;
@@ -168,6 +217,7 @@ main{
         padding: 10px;
         width: 1700px;
         margin:auto;
+        font-size: 25px;
         @include mobile {
             flex-direction: column;
             border: 1px solid $color2;
@@ -176,7 +226,29 @@ main{
             font-size: 22px;
             align-items: center;
             max-width: 350px;    
-        }    
+        }
+        .main__descripcion--texto {
+            p{
+                text-align: justify;
+                line-height: 1.5;
+            }
+            .button1{
+                background-color: $color6;
+                font-weight: bold;
+                border-radius: 5px;
+                padding:5px;
+                &:hover{
+                    background-color:$color1;
+                }
+                a{
+                    text-decoration: none;
+                    color:$color1;
+                    &:hover{
+                        color:$color6;
+                    }
+                }
+            } 
+        }   
         img {
             object-fit: cover;    
             width: 20%;
@@ -193,15 +265,24 @@ main{
 .maincontacto{
     display: flex;
     flex-direction: column;
+    max-width: 1600px;
+    margin: 0 auto;
     .section1{
         display: flex;        
         max-width: 1400px;
-        margin:5px auto;        
+        margin:5px auto;
+        @include mobile {
+            flex-direction: column;
+            font-size: 22px;
+            max-width: 350px;
+            margin: 0 auto;   
+        }         
         .section1__form{
             display:flex;
-            max-width: 1000px;                
+            flex-direction: column;
+            max-width: 1000px;           
             .form{            
-                width: 900px;
+                max-width: 800px;
                 padding:10px;
                 margin:0 auto;
                 background-color: $color2;
@@ -210,33 +291,67 @@ main{
                     padding:20px;
                     margin: 5px auto;
                     font-size: 2rem;
-                    .textarea{
-                        max-width: 100%;
-                        min-height: 100px;
-                        max-height: 100px;
-                    }
-                }             
-            }          
+                    @include mobile {
+                    font-size: 22px;
+                    max-width: 350px;
+                    margin: 0 auto;   
+                    }     
+                }
+                .textarea{
+                    max-width: 100%;
+                    min-height: 100px;
+                    max-height: 100px;
+                }
+            }             
+                      
         }       
     }
     .section2{
+        margin:0 auto;
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            font-size: 22px;
+            max-width: 350px; 
+            margin: 0 auto; 
+        }
         .flex-containerContacto{        
             display: flex;
             flex-direction: column;
             width: 900px;
             margin:10px 0 10px 0;
+            @include mobile {
+                flex-direction: column;
+                font-size: 22px;
+                max-width: 350px; 
+                margin: 0 auto; 
+                order:-1;  
+            } 
             h2{
                 text-align: left;
                 text-decoration: underline;
+                font-weight: bold;
+                @include mobile{
+                    text-align: center;
+                } 
             }          
             .flex-div--contacto{
                 display:flex;
                 max-width: 600px;
                 gap:5px;
                 padding:5px;
+                @include mobile{
+                    justify-content: flex-start;
+                    font-size: 22px;
+                    width: 100%; 
+                    margin: 0 auto;
+                } 
                 img{
                     width: 50px;
                     gap:5px;
+                    @include mobile{
+                        width: 40px;
+                    } 
                 }
             }
         }
@@ -246,6 +361,12 @@ main{
             margin: 5px auto;
             padding:5px;
             flex-direction: column;
+            @include mobile {
+                flex-direction: column;
+                font-size: 22px;
+                max-width: 350px; 
+                margin: 0 auto;
+            } 
             .flex-div--mapa{
                 display:flex;
                 max-width: 600px;
@@ -273,9 +394,42 @@ main{
     max-width: 1300px;
     margin: 2rem auto;
     gap:2rem;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+        max-width: 350px; 
+        margin: 3px auto;
+        gap:5px; 
+        border: 1px solid $color6;  
+    }
+    .contenedor__faq--div{
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            max-width: 350px;
+            margin: 5px auto; 
+        }
+        p{
+            @include mobile {
+                display: flex;
+                max-width: 350px;
+                flex-direction: column;
+                text-align: justify;
+                padding:5px;
+            } 
+        }   
+    }   
     img{
         width:500px;
         border-radius: 10px;
+        @include mobile {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 200px;
+            order:-1;  
+        } 
     }
 }
 .contenedor__faqRowReverse{
@@ -284,8 +438,25 @@ main{
     max-width: 1300px;
     margin: 2rem auto;
     gap:2rem;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+        max-width: 350px; 
+        margin: 0 auto;
+        padding: 6px;
+        border: 1px solid $color6; 
+        gap:5px;   
+    } 
     img{
         width:500px;
         border-radius: 10px;
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            order:-1; 
+            padding:5px;  
+        } 
     }
 }

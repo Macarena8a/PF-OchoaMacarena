@@ -47,6 +47,13 @@ main .section1 {
   main .section1 p {
     text-align: center;
     font-size: 30px; }
+    @media screen and (max-width: 480px) {
+      main .section1 p {
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+        max-width: 350;
+        margin: 0 auto; } }
 
 main .section2 {
   display: flex;
@@ -54,6 +61,16 @@ main .section2 {
   max-width: 1200px;
   margin: 10px auto;
   padding: 5px; }
+  @media screen and (max-width: 480px) {
+    main .section2 {
+      max-width: 400px;
+      flex-direction: column; } }
+  @media screen and (max-width: 480px) {
+    main .section2 {
+      flex-direction: column;
+      font-size: 22px;
+      max-width: 350px;
+      margin: 0 auto; } }
   main .section2 .section2__acercademi {
     max-width: 900px;
     display: flex;
@@ -68,6 +85,11 @@ main .section2 {
       flex-direction: column;
       text-align: center;
       align-items: center; }
+      @media screen and (max-width: 480px) {
+        main .section2 .section2__acercademi p {
+          font-size: 22px;
+          max-width: 350;
+          margin: 0 auto; } }
     main .section2 .section2__acercademi a {
       background-color: #8588a8;
       color: #eff0f6;
@@ -81,6 +103,10 @@ main .section2 {
       text-align: center;
       align-items: center;
       margin: 5px auto; }
+      @media screen and (max-width: 480px) {
+        main .section2 .section2__acercademi a {
+          font-size: 22px;
+          margin: 0 auto; } }
       main .section2 .section2__acercademi a:hover {
         background-color: #eff0f6;
         color: #8588a8;
@@ -91,6 +117,12 @@ main .section2 {
     main .section2 .section2__foto img {
       width: 500px;
       border-radius: 10px; }
+      @media screen and (max-width: 480px) {
+        main .section2 .section2__foto img {
+          display: flex;
+          flex-direction: column;
+          max-width: 350px;
+          margin: 0 auto; } }
 
 main .section3 {
   display: flex;
@@ -104,10 +136,20 @@ main .section3 {
     text-align: center;
     background-color: #bdbfd4;
     border: 1px dashed #eff0f6; }
+    @media screen and (max-width: 480px) {
+      main .section3 p {
+        font-size: 22px;
+        max-width: 350px;
+        margin: 0 auto; } }
   main .section3 .mapa {
     display: flex;
     justify-content: center;
     margin: 5px auto; }
+    @media screen and (max-width: 480px) {
+      main .section3 .mapa {
+        flex-direction: column;
+        max-width: 350px;
+        margin: 0 auto; } }
 
 /*fin index*/
 /*inicio Servicios*/
@@ -118,6 +160,13 @@ main .section3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px; }
+  @media screen and (max-width: 480px) {
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+      font-size: 22px;
+      max-width: 400px;
+      margin: 0 auto; } }
   .contenedor .card__container {
     display: flex;
     flex-direction: column;
@@ -180,7 +229,8 @@ main .main__contenedor {
   border-radius: 10px;
   padding: 10px;
   width: 1700px;
-  margin: auto; }
+  margin: auto;
+  font-size: 25px; }
   @media screen and (max-width: 480px) {
     main .main__contenedor {
       flex-direction: column;
@@ -190,6 +240,21 @@ main .main__contenedor {
       font-size: 22px;
       align-items: center;
       max-width: 350px; } }
+  main .main__contenedor .main__descripcion--texto p {
+    text-align: justify;
+    line-height: 1.5; }
+  main .main__contenedor .main__descripcion--texto .button1 {
+    background-color: #8588a8;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px; }
+    main .main__contenedor .main__descripcion--texto .button1:hover {
+      background-color: #eff0f6; }
+    main .main__contenedor .main__descripcion--texto .button1 a {
+      text-decoration: none;
+      color: #eff0f6; }
+      main .main__contenedor .main__descripcion--texto .button1 a:hover {
+        color: #8588a8; }
   main .main__contenedor img {
     object-fit: cover;
     width: 20%;
@@ -202,16 +267,25 @@ main .main__contenedor {
 /*inicio contacto*/
 .maincontacto {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  max-width: 1600px;
+  margin: 0 auto; }
   .maincontacto .section1 {
     display: flex;
     max-width: 1400px;
     margin: 5px auto; }
+    @media screen and (max-width: 480px) {
+      .maincontacto .section1 {
+        flex-direction: column;
+        font-size: 22px;
+        max-width: 350px;
+        margin: 0 auto; } }
     .maincontacto .section1 .section1__form {
       display: flex;
+      flex-direction: column;
       max-width: 1000px; }
       .maincontacto .section1 .section1__form .form {
-        width: 900px;
+        max-width: 800px;
         padding: 10px;
         margin: 0 auto;
         background-color: #bdbfd4; }
@@ -220,40 +294,80 @@ main .main__contenedor {
           padding: 20px;
           margin: 5px auto;
           font-size: 2rem; }
-          .maincontacto .section1 .section1__form .form .input .textarea, .maincontacto .section1 .section1__form .form .textarea .textarea, .maincontacto .section1 .section1__form .form .button .textarea {
-            max-width: 100%;
-            min-height: 100px;
-            max-height: 100px; }
-  .maincontacto .section2 .flex-containerContacto {
-    display: flex;
-    flex-direction: column;
-    width: 900px;
-    margin: 10px 0 10px 0; }
-    .maincontacto .section2 .flex-containerContacto h2 {
-      text-align: left;
-      text-decoration: underline; }
-    .maincontacto .section2 .flex-containerContacto .flex-div--contacto {
+          @media screen and (max-width: 480px) {
+            .maincontacto .section1 .section1__form .form .input, .maincontacto .section1 .section1__form .form .textarea, .maincontacto .section1 .section1__form .form .button {
+              font-size: 22px;
+              max-width: 350px;
+              margin: 0 auto; } }
+        .maincontacto .section1 .section1__form .form .textarea {
+          max-width: 100%;
+          min-height: 100px;
+          max-height: 100px; }
+  .maincontacto .section2 {
+    margin: 0 auto; }
+    @media screen and (max-width: 480px) {
+      .maincontacto .section2 {
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+        max-width: 350px;
+        margin: 0 auto; } }
+    .maincontacto .section2 .flex-containerContacto {
       display: flex;
-      max-width: 600px;
-      gap: 5px;
-      padding: 5px; }
-      .maincontacto .section2 .flex-containerContacto .flex-div--contacto img {
-        width: 50px;
-        gap: 5px; }
-  .maincontacto .section2 .flex-containerMapa {
-    display: flex;
-    max-width: 900px;
-    margin: 5px auto;
-    padding: 5px;
-    flex-direction: column; }
-    .maincontacto .section2 .flex-containerMapa .flex-div--mapa {
+      flex-direction: column;
+      width: 900px;
+      margin: 10px 0 10px 0; }
+      @media screen and (max-width: 480px) {
+        .maincontacto .section2 .flex-containerContacto {
+          flex-direction: column;
+          font-size: 22px;
+          max-width: 350px;
+          margin: 0 auto;
+          order: -1; } }
+      .maincontacto .section2 .flex-containerContacto h2 {
+        text-align: left;
+        text-decoration: underline;
+        font-weight: bold; }
+        @media screen and (max-width: 480px) {
+          .maincontacto .section2 .flex-containerContacto h2 {
+            text-align: center; } }
+      .maincontacto .section2 .flex-containerContacto .flex-div--contacto {
+        display: flex;
+        max-width: 600px;
+        gap: 5px;
+        padding: 5px; }
+        @media screen and (max-width: 480px) {
+          .maincontacto .section2 .flex-containerContacto .flex-div--contacto {
+            justify-content: flex-start;
+            font-size: 22px;
+            width: 100%;
+            margin: 0 auto; } }
+        .maincontacto .section2 .flex-containerContacto .flex-div--contacto img {
+          width: 50px;
+          gap: 5px; }
+          @media screen and (max-width: 480px) {
+            .maincontacto .section2 .flex-containerContacto .flex-div--contacto img {
+              width: 40px; } }
+    .maincontacto .section2 .flex-containerMapa {
       display: flex;
-      max-width: 600px;
-      gap: 5px;
-      padding: 5px; }
-      .maincontacto .section2 .flex-containerMapa .flex-div--mapa .mapa {
-        text-align: center;
-        margin: 5px auto; }
+      max-width: 900px;
+      margin: 5px auto;
+      padding: 5px;
+      flex-direction: column; }
+      @media screen and (max-width: 480px) {
+        .maincontacto .section2 .flex-containerMapa {
+          flex-direction: column;
+          font-size: 22px;
+          max-width: 350px;
+          margin: 0 auto; } }
+      .maincontacto .section2 .flex-containerMapa .flex-div--mapa {
+        display: flex;
+        max-width: 600px;
+        gap: 5px;
+        padding: 5px; }
+        .maincontacto .section2 .flex-containerMapa .flex-div--mapa .mapa {
+          text-align: center;
+          margin: 5px auto; }
 
 /*fin contacto*/
 /*Inicio faqs*/
@@ -262,9 +376,38 @@ main .main__contenedor {
   max-width: 1300px;
   margin: 2rem auto;
   gap: 2rem; }
+  @media screen and (max-width: 480px) {
+    .contenedor__faq {
+      display: flex;
+      flex-direction: column;
+      font-size: 22px;
+      max-width: 350px;
+      margin: 3px auto;
+      gap: 5px;
+      border: 1px solid #8588a8; } }
+  @media screen and (max-width: 480px) {
+    .contenedor__faq .contenedor__faq--div {
+      display: flex;
+      flex-direction: column;
+      max-width: 350px;
+      margin: 5px auto; } }
+  @media screen and (max-width: 480px) {
+    .contenedor__faq .contenedor__faq--div p {
+      display: flex;
+      max-width: 350px;
+      flex-direction: column;
+      text-align: justify;
+      padding: 5px; } }
   .contenedor__faq img {
     width: 500px;
     border-radius: 10px; }
+    @media screen and (max-width: 480px) {
+      .contenedor__faq img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 200px;
+        order: -1; } }
 
 .contenedor__faqRowReverse {
   display: flex;
@@ -272,9 +415,26 @@ main .main__contenedor {
   max-width: 1300px;
   margin: 2rem auto;
   gap: 2rem; }
+  @media screen and (max-width: 480px) {
+    .contenedor__faqRowReverse {
+      display: flex;
+      flex-direction: column;
+      font-size: 22px;
+      max-width: 350px;
+      margin: 0 auto;
+      padding: 6px;
+      border: 1px solid #8588a8;
+      gap: 5px; } }
   .contenedor__faqRowReverse img {
     width: 500px;
     border-radius: 10px; }
+    @media screen and (max-width: 480px) {
+      .contenedor__faqRowReverse img {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        order: -1;
+        padding: 5px; } }
 
 footer {
   margin-top: auto;
@@ -307,8 +467,8 @@ footer {
     opacity: 0.8; }
     @media screen and (max-width: 480px) {
       footer .footer_contacto a .footer__redes {
-        width: 60px; } }
+        width: 70px; } }
     footer .footer_contacto a .footer__redes:hover {
-      width: 90px;
+      width: 60px;
       background-color: #383636d7;
       opacity: 1; }
