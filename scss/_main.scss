@@ -251,19 +251,14 @@ main{
 main{
    .main__contenedor{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 50vh;
-        border: 1px solid $color3;
         font-family: $fuente;
         border-radius: 10px;
         padding: 10px;
-        width: 1700px;
-        margin:auto;
+        max-width: 1600px;
+        margin:0 auto;
         font-size: 25px;
         @include mobile {
             flex-direction: column;
-            border: 1px solid $color2;
             background-color: $color1;
             color: $color3;
             font-size: 22px;
@@ -271,6 +266,11 @@ main{
             max-width: 350px;    
         }
         .main__descripcion--texto {
+            max-width: 800px;
+            padding:10px;
+            img{
+                max-width: 500px;
+            }
             p{
                 text-align: justify;
                 line-height: 1.5;
@@ -291,16 +291,7 @@ main{
                     }
                 }
             } 
-        }   
-        img {
-            object-fit: cover;    
-            width: 20%;
-            height: 100%;
-            border-radius: 10px;
-            border: 1px dashed $color4;
-            margin: 10px;
-            padding:5px
-        }        
+        }          
     }
 }
  

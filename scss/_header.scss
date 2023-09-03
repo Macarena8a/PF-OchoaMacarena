@@ -14,7 +14,19 @@ header{
             }
             }
         }
+        #navbarNav{
+            .navbar-nav{
+                .estiloMaca{
+                    &:hover{
+                    background-color: $color1;
+                    border-radius: 10px;
+                    font-weight: bold;
+                }
+                }
+            }
+        }
     }
-} 
+}
+
 
 

@@ -35,6 +35,10 @@ header {
     @media screen and (max-width: 480px) {
       header .NavBar__BackgroundColor .container-fluid a .logo__mediaquery {
         width: 100px; } }
+    header .NavBar__BackgroundColor #navbarNav .navbar-nav .estiloMaca:hover {
+      background-color: #eff0f6;
+      border-radius: 10px;
+      font-weight: bold; }
 
 /*index*/
 main .section1 {
@@ -258,48 +262,40 @@ main .section3 {
 /*inicio Acercademi*/
 main .main__contenedor {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 50vh;
-  border: 1px solid #383636d6;
   font-family: "Lato", sans-serif;
   border-radius: 10px;
   padding: 10px;
-  width: 1700px;
-  margin: auto;
+  max-width: 1600px;
+  margin: 0 auto;
   font-size: 25px; }
   @media screen and (max-width: 480px) {
     main .main__contenedor {
       flex-direction: column;
-      border: 1px solid #bdbfd4;
       background-color: #eff0f6;
       color: #383636d6;
       font-size: 22px;
       align-items: center;
       max-width: 350px; } }
-  main .main__contenedor .main__descripcion--texto p {
-    text-align: justify;
-    line-height: 1.5; }
-  main .main__contenedor .main__descripcion--texto .button1 {
-    background-color: #8588a8;
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 5px; }
-    main .main__contenedor .main__descripcion--texto .button1:hover {
-      background-color: #eff0f6; }
-    main .main__contenedor .main__descripcion--texto .button1 a {
-      text-decoration: none;
-      color: #eff0f6; }
-      main .main__contenedor .main__descripcion--texto .button1 a:hover {
-        color: #8588a8; }
-  main .main__contenedor img {
-    object-fit: cover;
-    width: 20%;
-    height: 100%;
-    border-radius: 10px;
-    border: 1px dashed #383636d7;
-    margin: 10px;
-    padding: 5px; }
+  main .main__contenedor .main__descripcion--texto {
+    max-width: 800px;
+    padding: 10px; }
+    main .main__contenedor .main__descripcion--texto img {
+      max-width: 500px; }
+    main .main__contenedor .main__descripcion--texto p {
+      text-align: justify;
+      line-height: 1.5; }
+    main .main__contenedor .main__descripcion--texto .button1 {
+      background-color: #8588a8;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 5px; }
+      main .main__contenedor .main__descripcion--texto .button1:hover {
+        background-color: #eff0f6; }
+      main .main__contenedor .main__descripcion--texto .button1 a {
+        text-decoration: none;
+        color: #eff0f6; }
+        main .main__contenedor .main__descripcion--texto .button1 a:hover {
+          color: #8588a8; }
 
 /*inicio contacto*/
 .maincontacto {
