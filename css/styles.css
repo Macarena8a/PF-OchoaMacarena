@@ -44,7 +44,7 @@ main .section1 {
   @media screen and (max-width: 480px) {
     main .section1 {
       flex-direction: column;
-      max-width: 400px;
+      max-width: 350px;
       margin: 0 auto; } }
   main .section1 .section1__descripcion h1 {
     text-align: left;
@@ -53,7 +53,7 @@ main .section1 {
     @media screen and (max-width: 480px) {
       main .section1 .section1__descripcion h1 {
         font-size: 3rem;
-        max-width: 400px;
+        max-width: 350px;
         margin: 0 auto;
         text-align: center; } }
   main .section1 .section1__descripcion .button {
@@ -82,7 +82,7 @@ main .section1 {
         display: flex;
         flex-direction: column;
         font-size: 25px;
-        max-width: 350;
+        max-width: 350px;
         margin: 0 auto;
         padding: 5px; } }
 
@@ -103,7 +103,7 @@ main .section2 {
   @media screen and (max-width: 480px) {
     main .section2 {
       flex-direction: column;
-      max-width: 400px;
+      max-width: 350px;
       margin: 0 auto; } }
   main .section2 .section2__descripcion h2 {
     text-align: left;
@@ -112,7 +112,7 @@ main .section2 {
     @media screen and (max-width: 480px) {
       main .section2 .section2__descripcion h2 {
         font-size: 2rem;
-        max-width: 400px;
+        max-width: 350px;
         text-align: center; } }
   main .section2 .section2__descripcion p {
     text-align: left;
@@ -124,9 +124,9 @@ main .section2 {
         display: flex;
         flex-direction: column;
         font-size: 25px;
-        max-width: 350;
+        max-width: 350px;
         margin: 0 auto;
-        text-align: justify; } }
+        text-align: center; } }
 
 main .section3 {
   display: flex;
@@ -136,7 +136,7 @@ main .section3 {
   @media screen and (max-width: 480px) {
     main .section3 {
       flex-direction: column;
-      max-width: 400px;
+      max-width: 350px;
       margin: 0 auto; } }
   main .section3 h3 {
     text-align: left;
@@ -149,7 +149,7 @@ main .section3 {
     @media screen and (max-width: 480px) {
       main .section3 h3 {
         flex-direction: column;
-        max-width: 400px;
+        max-width: 350px;
         margin: 0 auto;
         font-size: 1.3 rem;
         text-align: center; } }
@@ -179,7 +179,7 @@ main .section3 {
       display: flex;
       flex-direction: column;
       font-size: 22px;
-      max-width: 400px;
+      max-width: 350px;
       margin: 0 auto; } }
   .contenedor .card__container {
     display: flex;
@@ -189,6 +189,9 @@ main .section3 {
     padding: 5px;
     cursor: pointer;
     transition: all 400ms ease; }
+    @media screen and (max-width: 480px) {
+      .contenedor .card__container {
+        max-width: 350px; } }
     .contenedor .card__container:hover {
       transform: translateY(-1%); }
     .contenedor .card__container .card-header {
@@ -196,10 +199,18 @@ main .section3 {
       width: 100%;
       object-position: 50% 50%;
       object-fit: cover; }
+      @media screen and (max-width: 480px) {
+        .contenedor .card__container .card-header {
+          max-width: 350px;
+          margin: 0 auto;
+          height: 150px; } }
       .contenedor .card__container .card-header img {
         width: 100%;
         display: block;
         border-radius: 5px; }
+        @media screen and (max-width: 480px) {
+          .contenedor .card__container .card-header img {
+            object-fit: cover; } }
     .contenedor .card__container .card-body {
       background-color: #eff0f6;
       padding: 20px 15px;
@@ -208,14 +219,26 @@ main .section3 {
       flex-grow: 1;
       display: flex;
       flex-direction: column; }
+      @media screen and (max-width: 480px) {
+        .contenedor .card__container .card-body {
+          max-width: 350px;
+          margin: 0 auto;
+          border: none;
+          padding: 5px; } }
       .contenedor .card__container .card-body .card-title {
         text-align: center;
-        margin: 0;
         font-weight: bold;
-        text-decoration: underline; }
+        text-decoration: underline;
+        margin: 0 auto; }
+        @media screen and (max-width: 480px) {
+          .contenedor .card__container .card-body .card-title {
+            max-width: 350px; } }
       .contenedor .card__container .card-body .card-description {
         flex-grow: 1;
         font-weight: bold; }
+        @media screen and (max-width: 480px) {
+          .contenedor .card__container .card-body .card-description {
+            text-align: center; } }
       .contenedor .card__container .card-body .btn {
         display: block;
         background-color: #8588a8;
