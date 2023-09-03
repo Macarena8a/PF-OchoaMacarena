@@ -180,7 +180,7 @@ main .section3 {
       flex-direction: column;
       font-size: 22px;
       max-width: 350px;
-      margin: 0 auto; } }
+      margin: 30px auto; } }
   .contenedor .card__container {
     display: flex;
     flex-direction: column;
@@ -359,7 +359,7 @@ main .main__contenedor {
           flex-direction: column;
           font-size: 22px;
           max-width: 350px;
-          margin: 0 auto;
+          margin: 0;
           order: -1; } }
       .maincontacto .section2 .flex-containerContacto h2 {
         text-align: left;
@@ -375,16 +375,16 @@ main .main__contenedor {
         padding: 5px; }
         @media screen and (max-width: 480px) {
           .maincontacto .section2 .flex-containerContacto .flex-div--contacto {
-            justify-content: flex-start;
             font-size: 22px;
-            width: 100%;
-            margin: 0 auto; } }
+            margin: 0; } }
         .maincontacto .section2 .flex-containerContacto .flex-div--contacto img {
           width: 50px;
           gap: 5px; }
           @media screen and (max-width: 480px) {
             .maincontacto .section2 .flex-containerContacto .flex-div--contacto img {
-              width: 40px; } }
+              width: 31px;
+              margin: 0;
+              height: 30px; } }
     .maincontacto .section2 .flex-containerMapa {
       display: flex;
       max-width: 900px;

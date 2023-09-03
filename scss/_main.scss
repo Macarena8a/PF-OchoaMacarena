@@ -160,7 +160,7 @@ main{
         flex-direction: column;
         font-size: 22px;
         max-width: 350px; 
-        margin: 0 auto;   
+        margin: 30px auto;   
     } 
     .card__container{
         display: flex;
@@ -215,7 +215,7 @@ main{
                 text-decoration: underline;
                 margin:0 auto;
                 @include mobile {
-                    max-width: 350px; 
+                    max-width: 350px;
                 } 
             }
             .card-description{
@@ -367,7 +367,7 @@ main{
                 flex-direction: column;
                 font-size: 22px;
                 max-width: 350px; 
-                margin: 0 auto; 
+                margin: 0; 
                 order:-1;  
             } 
             h2{
@@ -384,16 +384,16 @@ main{
                 gap:5px;
                 padding:5px;
                 @include mobile{
-                    justify-content: flex-start;
-                    font-size: 22px;
-                    width: 100%; 
-                    margin: 0 auto;
+                    font-size: 22px; 
+                    margin: 0;
                 } 
                 img{
                     width: 50px;
                     gap:5px;
                     @include mobile{
-                        width: 40px;
+                        width: 31px;
+                        margin:0;
+                        height: 30px;
                     } 
                 }
             }
